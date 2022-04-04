@@ -18,5 +18,16 @@
         <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="Imagem Flexível">
     </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/backwood-bbq.mp3" preload="metadata" controls loop></audio>
+    <p>Desta forma abaixo se consegue mais compatibilidade, pois o navegador pode tentar reproduzir outro formato se o primeiro não for compatível.</p>
+    <audio preload="metadata" controls> 
+        <!-- metadata vai carregar apenas as infos, auto iria carregar todo audio aumentando o tempo de carregamento do site-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!--wav é muito pesado-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a>.</p>
+    </audio>
 </body>
 </html>
